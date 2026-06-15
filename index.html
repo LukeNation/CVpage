@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Lucas Hernán Aprea — Backend Developer based in La Plata, Argentina." />
+    <meta name="theme-color" content="#0f172a" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Lucas Aprea — Backend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/styles/main.css" />
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="nav container" aria-label="Main navigation">
+        <a href="#hero" class="nav__logo" aria-label="Lucas Aprea — home">LA</a>
+        <ul class="nav__links" role="list">
+          <li><a href="#about"      data-i18n="nav.about">About</a></li>
+          <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+          <li><a href="#education"  data-i18n="nav.education">Education</a></li>
+          <li><a href="#skills"     data-i18n="nav.skills">Skills</a></li>
+          <li><a href="#contact"    data-i18n="nav.contact">Contact</a></li>
+        </ul>
+
+        <!-- Download CV -->
+        <button class="download-btn" id="downloadCV" type="button" data-i18n-aria="nav.download">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span data-i18n="nav.download-label">CV</span>
+        </button>
+
+        <!-- Language toggle -->
+        <button class="lang-toggle" id="langToggle" aria-label="Switch language" type="button">EN</button>
+
+        <!-- Theme toggle -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode" type="button">
+          <svg class="icon icon--sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg class="icon icon--moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+
+        <button class="nav__burger" id="navBurger" data-i18n-aria="nav.open-menu" aria-label="Open menu" aria-expanded="false" type="button">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- Hero -->
+      <section id="hero" class="hero" aria-labelledby="hero-heading">
+        <div class="container hero__inner">
+          <p class="hero__eyebrow" data-i18n="hero.eyebrow">Hello, I'm</p>
+          <h1 id="hero-heading" class="hero__name">Lucas Hernán Aprea</h1>
+          <p class="hero__title">
+            <span class="typed" id="typed" data-i18n-aria="hero.title-aria" aria-label="Backend Developer"></span>
+          </p>
+          <p class="hero__bio" data-i18n="hero.bio">
+            Backend developer with experience in Java, Spring Boot, and enterprise systems.
+            Based in La Plata, Argentina. Focused on building reliable software and
+            continuously growing as an engineer.
+          </p>
+          <div class="hero__actions">
+            <a href="#contact" class="btn btn--primary" data-i18n="hero.cta-primary">Get in touch</a>
+            <a href="#experience" class="btn btn--ghost" data-i18n="hero.cta-secondary">See my experience</a>
+          </div>
+          <div class="hero__social">
+            <a href="https://www.linkedin.com/in/lucas-aprea-628986176/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="mailto:lucasaprea98@gmail.com" aria-label="Send email">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+            <a href="tel:+542214349663" aria-label="Call phone number">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.13 1 .38 1.97.74 2.9a2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l1-1a2 2 0 0 1 2.11-.45c.93.36 1.9.61 2.9.74a2 2 0 0 1 1.72 2.03z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="hero__scroll" aria-hidden="true">
+          <span data-i18n="hero.scroll">scroll</span>
+          <div class="hero__scroll-line"></div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="section" aria-labelledby="about-heading">
+        <div class="container">
+          <h2 id="about-heading" class="section__title reveal" data-i18n="about.title">About me</h2>
+          <div class="about__grid reveal">
+            <div class="about__text">
+              <p data-i18n-html="about.p1">
+                I'm a backend developer currently working at <strong>NacionServicios</strong>.
+                My main stack is <strong>Java + Spring Boot</strong>, with experience across
+                core banking systems (T24/Temenos), e-commerce platforms, and large-scale freight
+                management systems. I studied Computer Science at UNLP and AI Engineering at
+                <strong>Universidad de Palermo</strong>.
+              </p>
+              <p data-i18n-html="about.p2">
+                I care deeply about clean, efficient code. My interest in object-oriented design
+                is backed by hardware awareness — I've been diagnosing and repairing my own
+                machines for years, which translates directly into writing code that's conscious
+                of resource usage and response times, not just correctness.
+              </p>
+              <p data-i18n-html="about.p3">
+                I always try to understand both the business and the infrastructure behind what
+                I'm building. That lets me get ahead of requests before they're made, push back
+                when something can be done better, and propose solutions that actually fit the
+                existing system — not just what sounds good on paper.
+              </p>
+            </div>
+            <ul class="about__facts" role="list">
+              <li class="fact">
+                <span class="fact__number">5+</span>
+                <span class="fact__label" data-i18n="about.fact1-label">Years in industry</span>
+              </li>
+              <li class="fact">
+                <span class="fact__number">5</span>
+                <span class="fact__label" data-i18n="about.fact2-label">Companies</span>
+              </li>
+              <li class="fact">
+                <span class="fact__number">B2</span>
+                <span class="fact__label" data-i18n="about.fact3-label">English level</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section id="experience" class="section section--alt" aria-labelledby="experience-heading">
+        <div class="container">
+          <h2 id="experience-heading" class="section__title reveal" data-i18n="experience.title">Experience</h2>
+          <ol class="timeline reveal" role="list">
+
+            <li class="timeline__item">
+              <div class="timeline__marker" aria-hidden="true"></div>
+              <article class="timeline__card">
+                <header class="timeline__header">
+                  <h3 class="timeline__role" data-i18n="exp.nacion.role">Backend Developer</h3>
+                  <p class="timeline__company">NacionServicios</p>
+                  <time class="timeline__period" datetime="2024" data-i18n="exp.nacion.period">2024 — Present</time>
+                </header>
+                <ul class="timeline__highlights" role="list">
+                  <li data-i18n="exp.nacion.h1">Direct hire after the outsourcing period — continued working on the same critical freight management system for a major national transport company in Argentina.</li>
+                  <li data-i18n="exp.nacion.h2">Backend development of a core cargo operations platform handling a significant part of the company's logistics flow.</li>
+                </ul>
+                <ul class="tag-list" role="list" aria-label="Technologies used">
+                  <li class="tag">Java</li>
+                  <li class="tag">Spring Boot</li>
+                  <li class="tag">SQL</li>
+                </ul>
+              </article>
+            </li>
+
+            <li class="timeline__item">
+              <div class="timeline__marker" aria-hidden="true"></div>
+              <article class="timeline__card">
+                <header class="timeline__header">
+                  <h3 class="timeline__role" data-i18n="exp.cfo.role">Backend Developer</h3>
+                  <p class="timeline__company">CFO Tech <span class="timeline__client">→ NacionServicios</span></p>
+                  <time class="timeline__period" datetime="2023" data-i18n="exp.cfo.period">2023</time>
+                </header>
+                <ul class="timeline__highlights" role="list">
+                  <li data-i18n="exp.cfo.h1">Outsourced through CFO Tech to NacionServicios to work on a freight management system for a major national transport company.</li>
+                  <li data-i18n="exp.cfo.h2">Developed backend features for a critical cargo operations platform with high business impact.</li>
+                </ul>
+                <ul class="tag-list" role="list" aria-label="Technologies used">
+                  <li class="tag">Java</li>
+                  <li class="tag">Spring Boot</li>
+                  <li class="tag">SQL</li>
+                </ul>
+              </article>
+            </li>
+
+            <li class="timeline__item">
+              <div class="timeline__marker" aria-hidden="true"></div>
+              <article class="timeline__card">
+                <header class="timeline__header">
+                  <h3 class="timeline__role" data-i18n="exp.factor.role">Semi Senior Developer</h3>
+                  <p class="timeline__company">Factor IT</p>
+                  <time class="timeline__period" datetime="2022" data-i18n="exp.factor.period">2022</time>
+                </header>
+                <ul class="timeline__highlights" role="list">
+                  <li data-i18n="exp.factor.h1">Backend development in Java for an e-commerce platform and inventory management system.</li>
+                  <li data-i18n="exp.factor.h2">Worked within an agile team delivering features across the full product lifecycle.</li>
+                </ul>
+                <ul class="tag-list" role="list" aria-label="Technologies used">
+                  <li class="tag">Java</li>
+                  <li class="tag">Spring</li>
+                  <li class="tag">E-commerce</li>
+                  <li class="tag">Agile</li>
+                </ul>
+              </article>
+            </li>
+
+            <li class="timeline__item">
+              <div class="timeline__marker" aria-hidden="true"></div>
+              <article class="timeline__card">
+                <header class="timeline__header">
+                  <h3 class="timeline__role" data-i18n="exp.globant.role">Semi Senior Developer</h3>
+                  <p class="timeline__company">Globant</p>
+                  <time class="timeline__period" datetime="2021" data-i18n="exp.globant.period">2021</time>
+                </header>
+                <ul class="timeline__highlights" role="list">
+                  <li data-i18n="exp.globant.h1">Worked on software solutions for international clients at a global scale.</li>
+                  <li data-i18n="exp.globant.h2">Developed and maintained backend services in a distributed team.</li>
+                </ul>
+                <ul class="tag-list" role="list" aria-label="Technologies used">
+                  <li class="tag">Java</li>
+                  <li class="tag">Spring Boot</li>
+                  <li class="tag">Git</li>
+                </ul>
+              </article>
+            </li>
+
+            <li class="timeline__item">
+              <div class="timeline__marker" aria-hidden="true"></div>
+              <article class="timeline__card">
+                <header class="timeline__header">
+                  <h3 class="timeline__role" data-i18n="exp.gl.role">Junior Developer</h3>
+                  <p class="timeline__company">GlobalLogic</p>
+                  <time class="timeline__period" datetime="2019" data-i18n="exp.gl.period">2019 — 2021</time>
+                </header>
+                <ul class="timeline__highlights" role="list">
+                  <li data-i18n="exp.gl.h1">Started on T24 (Temenos core banking platform) — gained solid foundation in enterprise financial systems.</li>
+                  <li data-i18n="exp.gl.h2">Transitioned internally to Java backend development, expanding into general-purpose enterprise software.</li>
+                </ul>
+                <ul class="tag-list" role="list" aria-label="Technologies used">
+                  <li class="tag">T24 / Temenos</li>
+                  <li class="tag">Java</li>
+                  <li class="tag">SQL</li>
+                  <li class="tag">Git</li>
+                </ul>
+              </article>
+            </li>
+
+          </ol>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section id="education" class="section" aria-labelledby="education-heading">
+        <div class="container">
+          <h2 id="education-heading" class="section__title reveal" data-i18n="education.title">Education</h2>
+          <div class="education-grid reveal">
+
+            <article class="edu-card edu-card--additional">
+              <div class="edu-card__year" data-i18n="edu.repair.year">2016</div>
+              <h3 class="edu-card__title" data-i18n="edu.repair.title">Computer Repair &amp; Assembly</h3>
+              <p class="edu-card__institution" data-i18n="edu.repair.institution">Sicos Informática — La Plata</p>
+            </article>
+
+            <article class="edu-card">
+              <div class="edu-card__year" data-i18n="edu.unlp.year">2017 — 2020</div>
+              <h3 class="edu-card__title" data-i18n="edu.unlp.title">Licenciatura en Informática</h3>
+              <p class="edu-card__institution" data-i18n="edu.unlp.institution">UNLP — Facultad de Informática</p>
+            </article>
+
+            <article class="edu-card edu-card--additional">
+              <div class="edu-card__year" data-i18n="edu.fullstack.year">2021 — 2022</div>
+              <h3 class="edu-card__title" data-i18n="edu.fullstack.title">Full Stack Development Course</h3>
+              <p class="edu-card__institution" data-i18n="edu.fullstack.institution">Programa desde tu casa (Remote)</p>
+            </article>
+
+            <article class="edu-card">
+              <div class="edu-card__year" data-i18n="edu.up.year">2022 — 2023</div>
+              <h3 class="edu-card__title" data-i18n="edu.up.title">Licenciatura en Tecnología de la Información</h3>
+              <p class="edu-card__institution" data-i18n="edu.up.institution">Universidad de Palermo — Facultad de Ingeniería</p>
+              <p class="edu-card__note" data-i18n="edu.up.note">Switched to AI Engineering after 2 years</p>
+            </article>
+
+            <article class="edu-card">
+              <div class="edu-card__year" data-i18n="edu.ai.year">2023 — 2026</div>
+              <h3 class="edu-card__title" data-i18n="edu.ai.title">Ingeniería en Inteligencia Artificial</h3>
+              <p class="edu-card__institution" data-i18n="edu.ai.institution">Universidad de Palermo — Facultad de Ingeniería</p>
+              <p class="edu-card__note" data-i18n="edu.ai.note">Incomplete — left to focus on professional career</p>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="section section--alt" aria-labelledby="skills-heading">
+        <div class="container">
+          <h2 id="skills-heading" class="section__title reveal" data-i18n="skills.title">Skills</h2>
+          <div class="skills-grid reveal">
+
+            <div class="skill-group">
+              <h3 class="skill-group__title" data-i18n="skills.group.backend">Backend</h3>
+              <ul class="skill-list" role="list">
+                <li class="skill-item">
+                  <span class="skill-item__name">Java</span>
+                  <div class="skill-item__bar" role="img" aria-label="Advanced level">
+                    <div class="skill-item__fill" style="--level: 85%"></div>
+                  </div>
+                  <p class="skill-context skill-context--inline" data-i18n="skills.java-context">Java versions worked with: 6, 7, 8, 11, 17, 21, 25</p>
+                </li>
+                <li class="skill-item">
+                  <span class="skill-item__name">Spring / Spring Boot</span>
+                  <div class="skill-item__bar" role="img" aria-label="Advanced level">
+                    <div class="skill-item__fill" style="--level: 85%"></div>
+                  </div>
+                </li>
+                <li class="skill-item">
+                  <span class="skill-item__name">Spring Security</span>
+                  <div class="skill-item__bar" role="img" aria-label="Basic–intermediate level">
+                    <div class="skill-item__fill" style="--level: 45%"></div>
+                  </div>
+                </li>
+                <li class="skill-item">
+                  <span class="skill-item__name">T24 / Temenos</span>
+                  <div class="skill-item__bar" role="img" aria-label="Intermediate level">
+                    <div class="skill-item__fill" style="--level: 60%"></div>
+                  </div>
+                </li>
+                <li class="skill-item">
+                  <span class="skill-item__name">JasperReports</span>
+                  <div class="skill-item__bar" role="img" aria-label="Basic–intermediate level">
+                    <div class="skill-item__fill" style="--level: 45%"></div>
+                  </div>
+                </li>
+                <li class="skill-item">
+                  <span class="skill-item__name">SQL</span>
+                  <div class="skill-item__bar" role="img" aria-label="Basic level">
+                    <div class="skill-item__fill" style="--level: 40%"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="skill-group">
+              <h3 class="skill-group__title" data-i18n="skills.group.frontend">Frontend &amp; Other Languages</h3>
+              <ul class="skill-list" role="list">
+                <li class="skill-item">
+                  <span class="skill-item__name">JavaScript</span>
+                  <div class="skill-item__bar" role="img" aria-label="Basic level">
+                    <div class="skill-item__fill" style="--level: 35%"></div>
+                  </div>
+                </li>
+                <li class="skill-item">
+                  <span class="skill-item__name">HTML / CSS</span>
+                  <div class="skill-item__bar" role="img" aria-label="Basic level">
+                    <div class="skill-item__fill" style="--level: 35%"></div>
+                  </div>
+                </li>
+                <li class="skill-item">
+                  <span class="skill-item__name">Python</span>
+                  <div class="skill-item__bar" role="img" aria-label="Basic level">
+                    <div class="skill-item__fill" style="--level: 30%"></div>
+                  </div>
+                </li>
+                <li class="skill-item">
+                  <span class="skill-item__name">.NET</span>
+                  <div class="skill-item__bar" role="img" aria-label="Basic level">
+                    <div class="skill-item__fill" style="--level: 25%"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="skill-group">
+              <h3 class="skill-group__title" data-i18n="skills.group.tools">Tools &amp; Workflow</h3>
+              <ul class="skill-list" role="list">
+                <li class="skill-item">
+                  <span class="skill-item__name">Git</span>
+                  <div class="skill-item__bar" role="img" aria-label="Basic–intermediate level">
+                    <div class="skill-item__fill" style="--level: 50%"></div>
+                  </div>
+                </li>
+                <li class="skill-item">
+                  <span class="skill-item__name">OpenShift</span>
+                  <div class="skill-item__bar" role="img" aria-label="Basic level">
+                    <div class="skill-item__fill" style="--level: 35%"></div>
+                  </div>
+                </li>
+                <li class="skill-item">
+                  <span class="skill-item__name">GCP</span>
+                  <div class="skill-item__bar" role="img" aria-label="Basic level">
+                    <div class="skill-item__fill" style="--level: 30%"></div>
+                  </div>
+                </li>
+                <li class="skill-item">
+                  <span class="skill-item__name">AWS Services</span>
+                  <div class="skill-item__bar" role="img" aria-label="Basic level">
+                    <div class="skill-item__fill" style="--level: 30%"></div>
+                  </div>
+                </li>
+                <li class="skill-item">
+                  <span class="skill-item__name">Linux</span>
+                  <div class="skill-item__bar" role="img" aria-label="Basic level">
+                    <div class="skill-item__fill" style="--level: 30%"></div>
+                  </div>
+                </li>
+                <li class="skill-item">
+                  <span class="skill-item__name">Agile</span>
+                  <div class="skill-item__bar" role="img" aria-label="Basic–intermediate level">
+                    <div class="skill-item__fill" style="--level: 45%"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="skill-group">
+              <h3 class="skill-group__title" data-i18n="skills.group.ai">AI Tools</h3>
+              <ul class="skill-list" role="list">
+                <li class="skill-item">
+                  <span class="skill-item__name" data-i18n="skills.ai.label">AI-assisted development</span>
+                  <div class="skill-item__bar" role="img" aria-label="Advanced level">
+                    <div class="skill-item__fill" style="--level: 85%"></div>
+                  </div>
+                </li>
+              </ul>
+              <p class="skill-context" data-i18n="skills.ai-context">Prompt engineering, code generation, debugging and research workflows with LLMs (Claude, ChatGPT, Copilot).</p>
+            </div>
+
+          </div>
+
+          <div class="languages reveal">
+            <h3 class="skill-group__title" data-i18n="skills.group.languages">Languages</h3>
+            <ul class="lang-list" role="list">
+              <li class="lang-item">
+                <span class="lang-item__flag" aria-hidden="true">🇦🇷</span>
+                <span class="lang-item__name" data-i18n="skills.lang.spanish">Spanish</span>
+                <span class="lang-item__level" data-i18n="skills.lang.spanish-level">Native</span>
+              </li>
+              <li class="lang-item">
+                <span class="lang-item__flag" aria-hidden="true">🇺🇸</span>
+                <span class="lang-item__name" data-i18n="skills.lang.english">English</span>
+                <span class="lang-item__level" data-i18n="skills.lang.english-level">Intermediate–Advanced (B2)</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section" aria-labelledby="contact-heading">
+        <div class="container">
+          <h2 id="contact-heading" class="section__title reveal" data-i18n="contact.title">Get in touch</h2>
+          <p class="contact__intro reveal" data-i18n="contact.intro">
+            Open to new opportunities, collaborations, or just a good conversation
+            about software. Reach me directly — I always reply.
+          </p>
+          <div class="contact__links reveal">
+            <a href="mailto:lucasaprea98@gmail.com" class="btn btn--primary btn--large">
+              lucasaprea98@gmail.com
+            </a>
+            <a href="tel:+542214349663" class="btn btn--ghost btn--large">
+              +54 221 434 9663
+            </a>
+            <a href="https://www.linkedin.com/in/lucas-aprea-628986176/" class="btn btn--ghost btn--large print-only" target="_blank" rel="noopener noreferrer">
+              linkedin.com/in/lucas-aprea-628986176
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <p data-i18n="footer.built">Designed &amp; built by Lucas Hernán Aprea</p>
+        <p class="site-footer__year">© <span id="year"></span></p>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

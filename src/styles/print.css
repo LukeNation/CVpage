@@ -1,0 +1,377 @@
+@media print {
+  @page {
+    size: A4;
+    margin: 1.4cm 1.6cm;
+  }
+
+  /* ── Reset for print ── */
+  *,
+  *::before,
+  *::after {
+    box-shadow: none !important;
+    text-shadow: none !important;
+    animation: none !important;
+    transition: none !important;
+  }
+
+  :root {
+    --color-bg: #ffffff;
+    --color-bg-alt: #f8fafc;
+    --color-surface: #f1f5f9;
+    --color-border: #cbd5e1;
+    --color-text: #0f172a;
+    --color-text-muted: #475569;
+    --color-accent: #4f46e5;
+    --color-accent-bg: #eef2ff;
+    --font-sans: "Inter", system-ui, sans-serif;
+    --font-mono: "JetBrains Mono", monospace;
+  }
+
+  html, body {
+    background: #fff !important;
+    color: #0f172a !important;
+    font-size: 10pt;
+    line-height: 1.5;
+  }
+
+  /* ── Force all animated elements visible ── */
+  .reveal,
+  .reveal.is-visible {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .skill-item__fill {
+    width: var(--level) !important;
+  }
+
+  /* ── Hide everything that's not content ── */
+  .site-header,
+  .hero__scroll,
+  .hero__actions,
+  .btn,
+  .skip-link,
+  .site-footer,
+  #themeToggle,
+  #langToggle,
+  #navBurger,
+  .nav__burger,
+  .download-btn {
+    display: none !important;
+  }
+
+  /* ── Print header: name + contact ── */
+  .hero {
+    min-height: unset !important;
+    padding: 0 0 1rem 0 !important;
+    border-bottom: 2px solid #4f46e5;
+    margin-bottom: 1rem;
+    page-break-after: avoid;
+  }
+
+  .hero::before { display: none; }
+
+  .hero__eyebrow {
+    font-size: 8pt;
+    color: #4f46e5;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 0.2rem;
+    opacity: 1 !important;
+  }
+
+  .hero__name {
+    font-size: 22pt;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin-bottom: 0.2rem;
+    opacity: 1 !important;
+  }
+
+  .hero__title {
+    font-size: 10pt;
+    color: #475569;
+    margin-bottom: 0.4rem;
+    opacity: 1 !important;
+  }
+
+  /* hide cursor from typed */
+  .typed::after { display: none; }
+
+  .hero__bio {
+    font-size: 9pt;
+    color: #475569;
+    max-width: 100%;
+    margin-bottom: 0.5rem;
+    opacity: 1 !important;
+  }
+
+  .hero__social { display: none !important; }
+
+  /* ── Sections ── */
+  .section,
+  .section--alt {
+    padding: 0.6rem 0 !important;
+    background: transparent !important;
+    page-break-inside: avoid;
+  }
+
+  .section__title {
+    font-size: 11pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #4f46e5;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.2rem;
+    border-bottom: 1px solid #cbd5e1;
+    display: block !important;
+  }
+
+  .section__title::after { display: none; }
+
+  /* ── About ── */
+  .about__grid {
+    display: block !important;
+  }
+
+  .about__text p {
+    font-size: 9pt;
+    color: #334155;
+    margin-bottom: 0.4rem;
+  }
+
+  .about__facts { display: none; }
+
+  /* ── Timeline ── */
+  .timeline {
+    padding-left: 0.8rem;
+  }
+
+  .timeline::before {
+    background: #cbd5e1;
+  }
+
+  .timeline__item {
+    padding-bottom: 0.6rem;
+    page-break-inside: avoid;
+  }
+
+  .timeline__card {
+    background: transparent !important;
+    border: 1px solid #cbd5e1 !important;
+    border-left: 3px solid #4f46e5 !important;
+    border-radius: 4px !important;
+    padding: 0.4rem 0.6rem !important;
+  }
+
+  .timeline__marker {
+    background: #4f46e5 !important;
+    border-color: #fff !important;
+  }
+
+  .timeline__role {
+    font-size: 10pt;
+    font-weight: 600;
+  }
+
+  .timeline__company {
+    font-size: 9pt;
+    color: #4f46e5;
+  }
+
+  .timeline__client { color: #64748b; }
+
+  .timeline__period {
+    font-size: 8pt;
+    color: #64748b;
+  }
+
+  .timeline__highlights { display: none; }
+
+  /* ── Education ── */
+  .education-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.4rem;
+  }
+
+  .edu-card {
+    background: transparent !important;
+    border: 1px solid #e2e8f0 !important;
+    padding: 0.4rem 0.5rem !important;
+    page-break-inside: avoid;
+  }
+
+  .edu-card__year   { font-size: 7.5pt; color: #4f46e5; }
+  .edu-card__title  { font-size: 8.5pt; font-weight: 600; }
+  .edu-card__institution { font-size: 8pt; color: #64748b; }
+  .edu-card__note   { font-size: 7.5pt; color: #94a3b8; }
+
+  /* ── Skills ── */
+  .skills-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.6rem 1.2rem;
+  }
+
+  .skill-group {
+    border-left: 2px solid #e2e8f0;
+    padding-left: 0.5rem;
+  }
+
+  .skill-group__title {
+    font-size: 7.5pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: #4f46e5;
+    margin-bottom: 0.35rem;
+    padding-bottom: 0.15rem;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  .skill-item {
+    margin-bottom: 0.2rem;
+  }
+
+  .skill-item__name {
+    font-size: 8.5pt;
+    font-weight: 500;
+  }
+
+  .skill-item__bar {
+    height: 3px;
+    background: #e2e8f0;
+    margin-top: 0.1rem;
+  }
+
+  .skill-item__fill {
+    background: #4f46e5 !important;
+    width: var(--level) !important;
+  }
+
+  .skill-context,
+  .skill-context--inline {
+    font-size: 7pt;
+    font-weight: 700;
+    background: transparent !important;
+    border-left: none !important;
+    color: #475569 !important;
+    padding: 0.15rem 0 0 0;
+    margin-top: 0.2rem;
+    font-style: italic;
+  }
+
+  /* ── Languages (in skills) ── */
+  .languages {
+    margin-top: 0.6rem;
+    border-left: 2px solid #e2e8f0;
+    padding-left: 0.5rem;
+  }
+
+  .languages .skill-group__title {
+    border-bottom: 1px solid #e2e8f0;
+    margin-bottom: 0.35rem;
+  }
+
+  .lang-list {
+    display: flex;
+    gap: 0.8rem;
+  }
+
+  .lang-item {
+    border: none !important;
+    padding: 0 !important;
+    font-size: 8.5pt;
+    gap: 0.3rem;
+  }
+
+  .lang-item__flag { font-size: 9pt; }
+
+  .lang-item__name { font-weight: 600; }
+
+  .lang-item__level {
+    font-size: 7.5pt;
+    color: #64748b;
+    font-family: var(--font-mono);
+  }
+
+  /* ── Contact ── */
+  #contact {
+    text-align: left !important;
+    page-break-before: auto;
+    padding: 0.6rem 0 0 !important;
+    background: transparent !important;
+  }
+
+  #contact .section__title {
+    font-size: 11pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #4f46e5;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.2rem;
+    border-bottom: 1px solid #cbd5e1;
+    display: block !important;
+  }
+
+  .contact__intro { display: none; }
+
+  .print-only { display: flex !important; }
+
+  .contact__links {
+    display: flex !important;
+    flex-direction: column;
+    gap: 0.3rem;
+    justify-content: flex-start !important;
+  }
+
+  .contact__links .btn {
+    display: flex !important;
+    width: fit-content;
+    font-size: 9pt;
+    font-weight: 400;
+    color: #4f46e5 !important;
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+  }
+
+  .contact__links a[href^="mailto:"]::before  { content: "Email: "; font-weight: 600; color: #0f172a; margin-right: 0.2rem; }
+  .contact__links a[href^="tel:"]::before     { content: "Teléfono: "; font-weight: 600; color: #0f172a; margin-right: 0.2rem; }
+  .contact__links a[href*="linkedin"]::before { content: "LinkedIn: "; font-weight: 600; color: #0f172a; margin-right: 0.2rem; }
+
+  /* ── Page breaks ── */
+  #experience,
+  #education,
+  #skills {
+    page-break-before: always;
+    break-before: page;
+  }
+
+  #contact {
+    page-break-before: auto;
+    break-before: auto;
+  }
+
+  #experience .section__title,
+  #education .section__title,
+  #skills .section__title {
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  /* ── Tags ── */
+  .tag-list { margin-top: 0.2rem; }
+
+  .tag {
+    font-size: 7pt;
+    padding: 0.05rem 0.3rem;
+    background: #eef2ff !important;
+    color: #4f46e5 !important;
+    border-radius: 3px;
+  }
+}
