@@ -28,7 +28,7 @@ export const translations = {
     "about.p2":
       "I care deeply about <strong>clean, efficient code</strong>. My interest in object-oriented design is backed by hardware awareness — I've been diagnosing and repairing my own machines for years, which translates directly into writing code that's conscious of resource usage and response times, not just correctness.",
     "about.p3":
-      "I always try to understand both the <strong>business and the infrastructure</strong> behind what I'm building. That lets me get ahead of requests before they're made, push back when something can be done better, and propose solutions that actually fit the existing system — not just what sounds good on paper.",
+      "I always try to understand both the <strong>business and the infrastructure</strong> behind what I'm building. That lets me get ahead of requests before they're made, push back when something can be done better, and propose solutions that actually fit the existing system.",
     "about.fact1-label": "Years in industry",
     "about.fact2-label": "Companies",
     "about.fact3-label": "English level",
@@ -128,7 +128,7 @@ export const translations = {
     "hero.eyebrow": "Hola, soy",
     "hero.title-aria": "Desarrollador Backend",
     "hero.bio":
-      "Desarrollador backend con experiencia en Java, Spring Boot y sistemas empresariales. Basado en La Plata, Argentina. Enfocado en construir software confiable y seguir creciendo como ingeniero.",
+      "Desarrollador backend con experiencia en Java, Spring Boot y sistemas empresariales. Desde La Plata, Argentina. Enfocado en construir software confiable y seguir creciendo como ingeniero.",
     "hero.cta-primary": "Contactame",
     "hero.cta-secondary": "Ver mi experiencia",
     "hero.scroll": "bajar",
@@ -140,7 +140,7 @@ export const translations = {
     "about.p2":
       "Me importa escribir <strong>código limpio y eficiente</strong>. Mi interés por el diseño orientado a objetos está respaldado por un conocimiento de hardware que desarrollé reparando mis propios equipos desde hace años — lo que se traduce directamente en código consciente del uso de recursos y los tiempos de respuesta, no solo de la corrección funcional.",
     "about.p3":
-      "Siempre intento entender tanto el <strong>negocio como la infraestructura</strong> detrás de lo que construyo. Eso me permite anticiparme a los pedidos antes de que lleguen, cuestionar cuando algo puede hacerse mejor, y proponer soluciones que realmente encajen en el sistema existente — no solo lo que suena bien sobre el papel.",
+      "Siempre intento entender tanto el <strong>negocio como la infraestructura</strong> detrás de lo que construyo. Eso me permite anticiparme a los pedidos antes de que lleguen, cuestionar cuando algo puede hacerse mejor, y proponer soluciones que realmente encajen en el sistema existente.",
     "about.fact1-label": "Años en la industria",
     "about.fact2-label": "Empresas",
     "about.fact3-label": "Nivel de inglés",
