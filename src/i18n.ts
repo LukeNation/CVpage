@@ -24,7 +24,7 @@ export const translations = {
     // About
     "about.title": "About me",
     "about.p1":
-      "I'm a backend developer currently working at <strong>NacionServicios</strong>. My main stack is <strong>Java + Spring Boot</strong>, with experience across core banking systems (T24/Temenos), e-commerce platforms, and large-scale freight management systems. I studied Computer Science at UNLP and AI Engineering at <strong>Universidad de Palermo</strong>.",
+      "I'm a backend developer currently working at <strong>NacionServicios</strong>. My main stack is <strong>Java + Spring Boot</strong>, with experience across core banking systems (T24/Temenos), e-commerce platforms, and public transport card recharge systems. I studied Computer Science at UNLP and AI Engineering at <strong>Universidad de Palermo</strong>.",
     "about.p2":
       "I care deeply about <strong>clean, efficient code</strong>. My interest in object-oriented design is backed by hardware awareness — I've been diagnosing and repairing my own machines for years, which translates directly into writing code that's conscious of resource usage and response times, not just correctness.",
     "about.p3":
@@ -39,37 +39,37 @@ export const translations = {
     "exp.nacion.role": "Backend Developer",
     "exp.nacion.period": "2024 — Present",
     "exp.nacion.h1":
-      "Direct hire after the outsourcing period — continued working on the same critical freight management system for a major national transport company in Argentina.",
+      "Direct hire at NacionServicios — continuation on the same public transport card recharge platform.",
     "exp.nacion.h2":
-      "Backend development of a core cargo operations platform handling a significant part of the company's logistics flow.",
+      "Backend development of a core system handling balance recharges for public transport cards at national scale.",
 
     "exp.cfo.role": "Backend Developer",
     "exp.cfo.period": "2023",
     "exp.cfo.h1":
-      "Outsourced through CFO Tech to NacionServicios to work on a freight management system for a major national transport company.",
+      "Outsourcing engagement through CFO Tech to NacionServicios — transit card balance top-up platform for a major national public transport company.",
     "exp.cfo.h2":
-      "Developed backend features for a critical cargo operations platform with high business impact.",
+      "Backend development for a critical public transport card recharge system with high business impact.",
 
     "exp.factor.role": "Semi Senior Developer",
     "exp.factor.period": "2022",
     "exp.factor.h1":
       "Backend development in Java for an e-commerce platform and inventory management system.",
     "exp.factor.h2":
-      "Worked within an agile team delivering features across the full product lifecycle.",
+      "Backend development across the full product lifecycle in an agile team.",
 
     "exp.globant.role": "Semi Senior Developer",
     "exp.globant.period": "2021",
     "exp.globant.h1":
-      "Worked on software solutions for international clients at a global scale.",
+      "Backend development for international clients in the entertainment and tourism industry.",
     "exp.globant.h2":
-      "Developed and maintained backend services in a distributed team.",
+      "Backend development and maintenance in a distributed team.",
 
     "exp.gl.role": "Junior Developer",
     "exp.gl.period": "2019 — 2021",
     "exp.gl.h1":
-      "Started on T24 (Temenos core banking platform) — gained solid foundation in enterprise financial systems.",
+      "T24 (Temenos core banking platform) — solid foundation in enterprise financial systems.",
     "exp.gl.h2":
-      "Transitioned internally to Java backend development, expanding into general-purpose enterprise software.",
+      "Internal transition to Java backend development, expanding into general-purpose enterprise software.",
 
     // Education
     "education.title": "Education",
@@ -85,11 +85,9 @@ export const translations = {
     "edu.up.year": "2022 — 2023",
     "edu.up.title": "Licenciatura en Tecnología de la Información",
     "edu.up.institution": "Universidad de Palermo — Facultad de Ingeniería",
-    "edu.up.note": "Switched to AI Engineering after 2 years",
     "edu.ai.year": "2023 — 2026",
     "edu.ai.title": "Ingeniería en Inteligencia Artificial",
     "edu.ai.institution": "Universidad de Palermo — Facultad de Ingeniería",
-    "edu.ai.note": "Incomplete — left to focus on professional career",
 
     // Skills
     "skills.title": "Skills",
@@ -138,7 +136,7 @@ export const translations = {
     // About
     "about.title": "Sobre mí",
     "about.p1":
-      "Soy desarrollador backend, actualmente trabajando en <strong>NacionServicios</strong>. Mi stack principal es <strong>Java + Spring Boot</strong>, con experiencia en sistemas bancarios core (T24/Temenos), plataformas de e-commerce y sistemas de gestión de cargas a gran escala. Estudié Informática en la UNLP e Ingeniería en IA en la <strong>Universidad de Palermo</strong>.",
+      "Soy desarrollador backend, actualmente trabajando en <strong>NacionServicios</strong>. Mi stack principal es <strong>Java + Spring Boot</strong>, con experiencia en sistemas bancarios core (T24/Temenos), plataformas de e-commerce y sistemas de recarga de tarjetas de transporte público. Estudié Informática en la UNLP e Ingeniería en IA en la <strong>Universidad de Palermo</strong>.",
     "about.p2":
       "Me importa escribir <strong>código limpio y eficiente</strong>. Mi interés por el diseño orientado a objetos está respaldado por un conocimiento de hardware que desarrollé reparando mis propios equipos desde hace años — lo que se traduce directamente en código consciente del uso de recursos y los tiempos de respuesta, no solo de la corrección funcional.",
     "about.p3":
@@ -153,37 +151,37 @@ export const translations = {
     "exp.nacion.role": "Desarrollador Backend",
     "exp.nacion.period": "2024 — Actualidad",
     "exp.nacion.h1":
-      "Incorporación directa tras el período de tercerización — continué trabajando en el mismo sistema crítico de gestión de cargas para una importante empresa de transporte nacional.",
+      "Incorporación directa en NacionServicios — continuación en la misma plataforma de recarga de tarjetas de transporte público.",
     "exp.nacion.h2":
-      "Desarrollo backend de una plataforma central de operaciones de carga que gestiona una parte significativa del flujo logístico de la empresa.",
+      "Desarrollo backend del sistema central de recarga de tarjetas de transporte público a escala nacional.",
 
     "exp.cfo.role": "Desarrollador Backend",
     "exp.cfo.period": "2023",
     "exp.cfo.h1":
-      "Tercerizado a través de CFO Tech hacia NacionServicios para trabajar en un sistema de gestión de cargas para una importante empresa de transporte nacional.",
+      "Tercerización a través de CFO Tech hacia NacionServicios — plataforma de carga de saldo en tarjetas de transporte público para una importante empresa de transporte nacional.",
     "exp.cfo.h2":
-      "Desarrollo de funcionalidades backend para una plataforma crítica de operaciones de carga con alto impacto en el negocio.",
+      "Desarrollo backend para un sistema crítico de recarga de tarjetas de transporte público con alto impacto en el negocio.",
 
     "exp.factor.role": "Desarrollador Semi Senior",
     "exp.factor.period": "2022",
     "exp.factor.h1":
       "Desarrollo backend en Java para una plataforma de e-commerce y un sistema de administración de inventarios.",
     "exp.factor.h2":
-      "Trabajé en un equipo ágil entregando funcionalidades a lo largo del ciclo de vida completo del producto.",
+      "Desarrollo backend a lo largo del ciclo de vida completo del producto en equipo ágil.",
 
     "exp.globant.role": "Desarrollador Semi Senior",
     "exp.globant.period": "2021",
     "exp.globant.h1":
-      "Desarrollé soluciones de software para clientes internacionales a escala global.",
+      "Desarrollo backend para clientes internacionales en la industria del entretenimiento y turismo.",
     "exp.globant.h2":
       "Desarrollo y mantenimiento de servicios backend en un equipo distribuido.",
 
     "exp.gl.role": "Desarrollador Junior",
     "exp.gl.period": "2019 — 2021",
     "exp.gl.h1":
-      "Empecé en T24 (plataforma de core banking de Temenos) — construí una base sólida en sistemas financieros empresariales.",
+      "T24 (plataforma de core banking de Temenos) — base sólida en sistemas financieros empresariales.",
     "exp.gl.h2":
-      "Transición interna hacia desarrollo backend en Java, expandiéndome hacia software empresarial de propósito general.",
+      "Transición interna hacia desarrollo backend en Java, con expansión hacia software empresarial de propósito general.",
 
     // Education
     "education.title": "Formación",
@@ -199,11 +197,9 @@ export const translations = {
     "edu.up.year": "2022 — 2023",
     "edu.up.title": "Licenciatura en Tecnología de la Información",
     "edu.up.institution": "Universidad de Palermo — Facultad de Ingeniería",
-    "edu.up.note": "Cambié a Ingeniería en IA luego de 2 años",
     "edu.ai.year": "2023 — 2026",
     "edu.ai.title": "Ingeniería en Inteligencia Artificial",
     "edu.ai.institution": "Universidad de Palermo — Facultad de Ingeniería",
-    "edu.ai.note": "Incompleto — dejé para enfocarme en la carrera profesional",
 
     // Skills
     "skills.title": "Habilidades",

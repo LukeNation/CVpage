@@ -104,13 +104,13 @@ const phrasesByLocale: Record<Locale, string[]> = {
   en: [
     "Backend Developer",
     "Java + Spring Boot",
-    "Banking systems (T24)",
+    "Microservices & automated systems",
     "Based in La Plata, Argentina",
   ],
   es: [
     "Desarrollador Backend",
     "Java + Spring Boot",
-    "Sistemas bancarios (T24)",
+    "Microservicios y sistemas automáticos",
     "La Plata, Argentina",
   ],
 };
