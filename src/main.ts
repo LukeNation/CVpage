@@ -104,13 +104,13 @@ const phrasesByLocale: Record<Locale, string[]> = {
   en: [
     "Backend Developer",
     "Java + Spring Boot",
-    "Microservices & automated systems",
+    "Microservices & critical systems",
     "Based in La Plata, Argentina",
   ],
   es: [
     "Desarrollador Backend",
     "Java + Spring Boot",
-    "Microservicios y sistemas automáticos",
+    "Microservicios y sistemas críticos",
     "La Plata, Argentina",
   ],
 };
@@ -180,24 +180,6 @@ document.querySelectorAll<HTMLElement>(".reveal").forEach((el) => {
   revealObserver.observe(el);
 });
 
-// ── Skill bars (reveal on scroll) ────────────────────────────────────────────
-
-const skillObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("is-visible");
-        skillObserver.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.3 }
-);
-
-document.querySelectorAll<HTMLElement>(".skill-item__fill").forEach((bar) => {
-  skillObserver.observe(bar);
-});
-
 // ── Active nav link on scroll ─────────────────────────────────────────────────
 
 const sections = document.querySelectorAll<HTMLElement>("section[id]");
@@ -227,11 +209,8 @@ if (yearEl) yearEl.textContent = String(new Date().getFullYear());
 // ── Download CV (print to PDF) ────────────────────────────────────────────────
 
 document.getElementById("downloadCV")?.addEventListener("click", () => {
-  // Force all scroll-animated elements and skill bars to their final state
+  // Force all scroll-animated elements to their final state
   document.querySelectorAll<HTMLElement>(".reveal").forEach((el) => {
-    el.classList.add("is-visible");
-  });
-  document.querySelectorAll<HTMLElement>(".skill-item__fill").forEach((el) => {
     el.classList.add("is-visible");
   });
   window.print();

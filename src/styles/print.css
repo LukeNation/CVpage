@@ -41,10 +41,6 @@
     transform: none !important;
   }
 
-  .skill-item__fill {
-    width: var(--level) !important;
-  }
-
   /* ── Hide everything that's not content ── */
   .site-header,
   .hero__scroll,
@@ -232,28 +228,12 @@
     border-bottom: 1px solid #e2e8f0;
   }
 
-  .skill-item {
-    margin-bottom: 0.2rem;
+  #skills .tag-list {
+    margin-top: 0;
+    gap: 0.2rem;
   }
 
-  .skill-item__name {
-    font-size: 8.5pt;
-    font-weight: 500;
-  }
-
-  .skill-item__bar {
-    height: 3px;
-    background: #e2e8f0;
-    margin-top: 0.1rem;
-  }
-
-  .skill-item__fill {
-    background: #4f46e5 !important;
-    width: var(--level) !important;
-  }
-
-  .skill-context,
-  .skill-context--inline {
+  .skill-context {
     font-size: 7pt;
     font-weight: 700;
     background: transparent !important;

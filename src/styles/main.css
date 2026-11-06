@@ -756,7 +756,7 @@ button { cursor: pointer; font: inherit; border: none; background: none; }
   margin-bottom: var(--space-6);
 }
 
-.skill-list { display: flex; flex-direction: column; gap: var(--space-4); }
+.skill-group .tag-list { margin-top: 0; }
 
 .skill-context {
   margin-top: var(--space-4);
@@ -769,36 +769,6 @@ button { cursor: pointer; font: inherit; border: none; background: none; }
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
   line-height: 1.5;
 }
-
-.skill-context--inline {
-  margin-top: var(--space-2);
-  font-size: 0.7rem;
-  padding: var(--space-1) var(--space-2);
-}
-
-.skill-item { display: flex; flex-direction: column; gap: var(--space-1); }
-
-.skill-item__name {
-  font-size: 0.9375rem;
-  font-weight: 500;
-}
-
-.skill-item__bar {
-  height: 6px;
-  background: var(--color-border);
-  border-radius: 9999px;
-  overflow: hidden;
-}
-
-.skill-item__fill {
-  height: 100%;
-  width: 0;
-  background: linear-gradient(90deg, var(--color-accent), var(--color-accent-light));
-  border-radius: 9999px;
-  transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.skill-item__fill.is-visible { width: var(--level); }
 
 /* =========================================================
    Education
@@ -820,11 +790,6 @@ button { cursor: pointer; font: inherit; border: none; background: none; }
 .edu-card:hover {
   box-shadow: var(--shadow-md);
   border-color: var(--color-accent);
-}
-
-.edu-card--additional {
-  border-style: dashed;
-  opacity: 0.85;
 }
 
 .edu-card__year {
